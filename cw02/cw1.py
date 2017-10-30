@@ -1,6 +1,8 @@
+import os
+
 import cv2
 
-img3 = cv2.imread('lena.jpg',1)
+img3 = cv2.imread(os.path.dirname(os.path.abspath(".")) + "\images" + "\lena.jpg", 1)
 counter = 0
 for i in img3:
     for j in i:

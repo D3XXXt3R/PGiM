@@ -1,6 +1,8 @@
+import os
+
 import cv2
 
-img = cv2.imread('lena.jpg', 0)
+img = cv2.imread(os.path.dirname(os.path.abspath(".")) + "\images" + "\lena.jpg", 0)
 cv2.namedWindow('image', cv2.WINDOW_NORMAL)
 cv2.imshow('image', img)
 

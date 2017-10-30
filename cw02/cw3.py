@@ -1,8 +1,10 @@
+import os
+
 import numpy as np
 from matplotlib import pyplot as plt
 from scipy import misc
 
-image = misc.imread('lena.jpg')
+image = misc.imread(os.path.dirname(os.path.abspath(".")) + "\images" + "\lena.jpg")
 grey = np.zeros((image.shape[0], image.shape[1]))  # init 2D numpy array
 
 for rownum in range(len(image)):

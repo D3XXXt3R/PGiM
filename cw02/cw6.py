@@ -1,9 +1,11 @@
+import os
+
 from scipy import ndimage
 import cv2
 import matplotlib.pyplot as plt
 
 
-img = cv2.imread('lena.jpg', 0)
+img = cv2.imread(os.path.dirname(os.path.abspath(".")) + "\images" + "\lena.jpg", 0)
 
 rotated = ndimage.rotate(img, 30)
 plt.imshow(rotated)

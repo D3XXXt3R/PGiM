@@ -1,7 +1,9 @@
+import os
+
 import cv2
 import numpy as np
 
-img = cv2.imread('lena.jpg', 1)
+img = cv2.imread(os.path.dirname(os.path.abspath(".")) + "\images" + "\lena.jpg", 1)
 img2 = img[0:512, 0:300]
 img3 = img[0:512, 301:512]
 cv2.namedWindow('image', cv2.WINDOW_NORMAL)
